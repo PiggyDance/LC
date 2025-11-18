@@ -14,7 +14,7 @@ class OrderAlphaBetaAndNumberTest {
 
     @Test
     fun `basic case2`() {
-        val input = "a1b2c3f"
+        val input = "fa1b2c3f"
         val expected = "abcf123"
         val actual = OrderAlphaBetaAndNumber().solve(input)
         assertEquals(expected, actual)
