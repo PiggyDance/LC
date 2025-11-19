@@ -1,4 +1,4 @@
-package io.piggydance.kts
+package io.piggydance.kts.lc
 
 class LC1 {
     fun func(input: IntArray, target: Int): IntArray {

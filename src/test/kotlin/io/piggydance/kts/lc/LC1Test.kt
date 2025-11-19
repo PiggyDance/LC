@@ -1,9 +1,7 @@
-package io.piggydance.kts
+package io.piggydance.kts.lc
 
-import org.junit.jupiter.api.Assertions.assertArrayEquals
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.params.provider.Arguments
-import java.util.stream.Stream
 import kotlin.test.assertEquals
 
 class LC1Test {
@@ -17,7 +15,7 @@ class LC1Test {
         val target = 9
         val expected = intArrayOf(0, 1)
         val actual = solution.func(input, target)
-        assertArrayEquals(expected, actual)
+        Assertions.assertArrayEquals(expected, actual)
     }
 
     // 重复元素测试用例
@@ -27,7 +25,7 @@ class LC1Test {
         val target = 6
         val expected = intArrayOf(0, 1)
         val actual = solution.func(input, target)
-        assertArrayEquals(expected, actual)
+        Assertions.assertArrayEquals(expected, actual)
     }
 
     // 负数测试用例
@@ -37,7 +35,7 @@ class LC1Test {
         val target = -8
         val expected = intArrayOf(2, 4)
         val actual = solution.func(input, target)
-        assertArrayEquals(expected, actual)
+        Assertions.assertArrayEquals(expected, actual)
     }
 
     // 多对解测试用例（应返回第一对找到的）
@@ -47,7 +45,7 @@ class LC1Test {
         val target = 6
         val expected = intArrayOf(1, 3) // 1+5=6，应先找到这一对
         val actual = solution.func(input, target)
-        assertArrayEquals(expected, actual)
+        Assertions.assertArrayEquals(expected, actual)
     }
 
     // 空数组测试用例
@@ -57,7 +55,7 @@ class LC1Test {
         val target = 10
         val expected = intArrayOf(0, 0) // 这是原代码的默认返回值
         val actual = solution.func(input, target)
-        assertArrayEquals(expected, actual)
+        Assertions.assertArrayEquals(expected, actual)
     }
 
     @Test

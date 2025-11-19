@@ -1,4 +1,4 @@
-package io.piggydance.kts
+package io.piggydance.kts.learn
 
 class OrderAlphaBetaAndNumber {
     fun solve(input: String): String {
